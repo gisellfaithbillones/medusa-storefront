@@ -18,6 +18,6 @@ const queryClient = new QueryClient({
   },
 })
 
-const medusaClient = new Medusa({ baseUrl: MEDUSA_BACKEND_URL, maxRetries: 3 })
+const medusaClient = new Medusa({ baseUrl: MEDUSA_BACKEND_URL, maxRetries: 3, apiKey: '{api_token}' } )
 
 export { MEDUSA_BACKEND_URL, queryClient, medusaClient }
