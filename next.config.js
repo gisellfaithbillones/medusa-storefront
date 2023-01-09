@@ -7,6 +7,21 @@ module.exports = withStoreConfig({
   images: {
     domains: ["medusa-public-images.s3.eu-west-1.amazonaws.com", "localhost"],
   },
+  i18n: {
+    locales: ['en-US', 'fr', 'nl-NL'],
+    defaultLocale: 'en-US',
+    domains: [
+      {
+        domain: 'https://terminal65.com/',
+        defaultLocale: 'en-US',
+      },
+      {
+        domain: 'https://agent65.com/',
+        defaultLocale: 'gb',
+      },
+    ],
+  },
+
 })
 
 console.log("next.config.js", JSON.stringify(module.exports, null, 2))
