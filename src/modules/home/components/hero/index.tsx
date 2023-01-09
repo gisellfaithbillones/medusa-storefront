@@ -1,5 +1,6 @@
 import UnderlineLink from "@modules/common/components/underline-link"
 import Image from "next/image"
+import terminal65Image from  "../../../../assets/images/terminal65.jpg"
 
 const Hero = () => {
   return (
@@ -15,7 +16,7 @@ const Hero = () => {
         <UnderlineLink href="/store">Explore products</UnderlineLink>
       </div>
       <Image
-        src="/hero.jpg"
+        src={ terminal65Image }
         layout="fill"
         loading="eager"
         priority={true}
